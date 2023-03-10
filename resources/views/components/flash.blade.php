@@ -1,0 +1,20 @@
+@if ( Session::has('success'))
+    <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+        {{ Session::get('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
+@if ( Session::has('failure'))
+    <div class="alert alert-danger alert-dismissible fade show mb-0" role="alert">
+        {{ Session::get('failure') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
+@if ( Session::has('info'))
+    <div class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+        {{ Session::get('info') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
